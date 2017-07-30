@@ -1,0 +1,285 @@
+html {
+  box-sizing: border-box;
+  /*background-color: #FFB6C1;*/
+  font-family:monospace;
+  background-image: url("mixtape-background.png");
+  background-size:cover;
+  background-repeat:repeat;
+  background-attachment: fixed;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height:30vh;
+  width:100%;
+  height:100%;
+  background-image: url("eighties.png");
+  background-size:cover;
+  border-bottom: thick solid #ff6c83;
+
+}
+h3{
+  text-align: center;
+  color:#fff;
+  padding-top:2%
+}
+
+.box1 img{
+  max-width: 100vw;
+  padding:2%;
+}
+
+
+block-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul{
+  display:flex;
+  list-style: none;
+  justify-content: center;
+}
+form{
+  display:flex;
+  justify-content: center;
+  padding:5%;
+}
+.fetch{
+  text-align: center;
+  padding-top:2%;
+  color:#ff6c83;
+  font-size:1rem;
+  font-weight: bolder;
+}
+
+input, button{
+  min-height:5vh;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  min-width:20%;
+  color: #ff6c83;
+  font-weight:bold;
+  padding:2%;
+  font-family:monospace;
+}
+
+button{
+  min-width:20%;
+  background-color:#ff6c83;
+  color: #fff;
+  text-align:center;
+}
+
+
+li img{
+  -webkit-filter:sepia(0.2) brightness(1.1) contrast(1.3);
+  box-shadow:inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+  background:-webkit-linear-gradient(top, rgba(255,145,0,0.2) 0%,rgba(255,230,48,0.2) 60%), -webkit-linear-gradient(20deg, rgba(255,0,0,0.5) 0%,rgba(255,0,0,0) 35%);
+  position:relative;
+  bottom:-1px;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.polaroid{
+  box-shadow:inset 0 0 100px rgba(0,0,20,.7), 0 5px 15px rgba(0,0,0,.5);
+  background:-webkit-linear-gradient(top, rgba(255,145,0,0.2) 0%,rgba(255,230,48,0.2) 60%), -webkit-linear-gradient(20deg, rgba(255,0,0,0.7) 0%,rgba(255,0,0,0) 35%);
+  overflow:hidden;
+  background-position: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border: 0.8rem solid white;
+  border-bottom-width: 3rem;
+  margin:5%;
+}
+
+.text-center {
+    text-align: center;
+
+}
+/* Grid system! */
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; /* This will allow our row to display columns horizontally */
+    flex-wrap: wrap; /* This will become necessary to allow our flex boxes to stack in responsive mode */
+
+}
+
+/* Small and up columns */
+
+/* If an element needs all twelve columns, then its width is 100%. Easy. */
+.col-small-12 {
+    width: 100%;
+}
+/* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+.col-small-11 {
+    width: 91.666%;
+}
+.col-small-10 {
+    width: 83.333%;
+}
+.col-small-9 {
+    width: 75%;
+}
+.col-small-8 {
+    width: 66.666%;
+}
+.col-small-7 {
+    width: 58.333%;
+}
+/* This is the class we'd use if we want two 50/50 elements next to each other */
+.col-small-6 {
+    width: 50%;
+}
+.col-small-5 {
+    width: 41.666%;
+}
+/* This is the class we'd use if we want three elements next to each other */
+.col-small-4 {
+    width: 33.333%;
+}
+/* This is the class we'd use if we want four elements next to each other */
+.col-small-3 {
+    width: 25%;
+}
+.col-small-2 {
+    width: 16.666%;
+}
+/* We'll almost NEVER use this */
+.col-small-1 {
+    width: 8.333%;
+}
+
+
+/* Medium and up screen sizes */
+@media only screen and (min-width: 641px) {
+  .box1 img{
+    display:flex;
+    max-width:90vw;
+  }
+  header{
+    padding:5%;
+  }
+  form{
+    display:flex;
+    justify-content: center;
+    padding:2%;
+  }
+
+  .col-medium-12 {
+      width: 100%;
+  }
+  /* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+  .col-medium-11 {
+      width: 91.666%;
+  }
+  .col-medium-10 {
+      width: 83.333%;
+  }
+  .col-medium-9 {
+      width: 75%;
+  }
+  .col-medium-8 {
+      width: 66.666%;
+  }
+  .col-medium-7 {
+      width: 58.333%;
+  }
+  /* This is the class we'd use if we want two 50/50 elements next to each other */
+  .col-medium-6 {
+      width: 50%;
+  }
+  .col-medium-5 {
+      width: 41.666%;
+  }
+  /* This is the class we'd use if we want three elements next to each other */
+  .col-medium-4 {
+      width: 33.333%;
+  }
+  /* This is the class we'd use if we want four elements next to each other */
+  .col-medium-3 {
+      width: 25%;
+  }
+  .col-medium-2 {
+      width: 16.666%;
+  }
+  /* We'll almost NEVER use this */
+  .col-medium-1 {
+      width: 8.333%;
+  }
+
+}
+
+
+
+
+/* Large screen sizes */
+@media only screen and (min-width: 1025px) {
+  html{
+    background-size:50%;
+  }
+  .box1 img{
+    max-width:60vw;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    padding:5%;
+  }
+
+
+  .col-large-12 {
+      width: 100%;
+  }
+  /* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+  .col-large-11 {
+      width: 91.666%;
+  }
+  .col-large-10 {
+      width: 83.333%;
+  }
+  .col-large-9 {
+      width: 75%;
+  }
+  .col-large-8 {
+      width: 66.666%;
+  }
+  .col-large-7 {
+      width: 58.333%;
+  }
+  /* This is the class we'd use if we want two 50/50 elements next to each other */
+  .col-large-6 {
+      width: 50%;
+  }
+
+  .col-large-5 {
+      width: 41.666%;
+  }
+  /* This is the class we'd use if we want three elements next to each other */
+  .col-large-4 {
+      width: 33.333%;
+  }
+  /* This is the class we'd use if we want four elements next to each other */
+  .col-large-3 {
+      width: 25%;
+  }
+  .col-large-2 {
+      width: 16.666%;
+  }
+  /* We'll almost NEVER use this */
+  .col-large-1 {
+      width: 8.333%;
+  }
+}

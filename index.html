@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flickr App</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="headerimage">
+      <div class="box1">
+        <img src="retrologo.png">
+        <!-- <h1 class="title">notify<span>.</span></h1> -->
+      </div>
+    </div>
+
+    </header>
+    <h3> Use the Flickr API to find your favourite images with a vintage filter! </h3>
+    <div id="app">
+
+      <div class="main-app">
+
+        <form class="photoSearchForm">
+          <input type="text" placeholder = "search for pics" class="photoInput">
+          <button type="submit" class="photoSearchButton">Let's Go</button>
+        </form>
+        <div class="fetch"></div>
+        <div class = "block-grid">
+        <ul class="gallery row">
+          <!-- <li class="frame">
+            <img class='retro' src='photoData.medium'alt=photoData.title>
+          </li> -->
+        </ul>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
