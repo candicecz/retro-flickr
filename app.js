@@ -4,7 +4,7 @@
 // Secret:
 // 3bcbbadea6cd9bb2
 (function(){
-let API_KEY = `a40b19fbab002761dc8988b5bc4e7f96`
+let API_KEY = `45c92b1adda59cb13439d43c2f1cabc4`
 let API_LINK = `https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=`
 
 
